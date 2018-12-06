@@ -1,6 +1,13 @@
+
+/*** Angular Imports ***/
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+/*** Material Imports ***/
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material';
 
+/*** Custom Imports ***/
 import { EmployeeDataRoutingModule } from './employee-data-routing.module';
 import { EmployeeDataComponent } from './employee-data.component';
 import { EmployeeNameComponent } from './employee-name/employee-name.component';
@@ -12,8 +19,18 @@ import { EmployeePersonalDetailsComponent } from './employee-personal-details/em
 @NgModule({
   imports: [
     CommonModule,
-    EmployeeDataRoutingModule
+    EmployeeDataRoutingModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule, 
   ],
-  declarations: [EmployeeDataComponent, EmployeeNameComponent, EmployeeDesignationComponent, EmployeeIdComponent, EmployeeSalaryComponent, EmployeePersonalDetailsComponent]
+  declarations: [
+    EmployeeDataComponent,
+    EmployeeNameComponent,
+    EmployeeDesignationComponent,
+    EmployeeIdComponent,
+    EmployeeSalaryComponent,
+    EmployeePersonalDetailsComponent
+  ]
 })
 export class EmployeeDataModule { }
