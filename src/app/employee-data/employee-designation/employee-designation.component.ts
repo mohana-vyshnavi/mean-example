@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, Output } from '@angular/core';
 
 @Component({
   selector: 'app-employee-designation',
@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeDesignationComponent implements OnInit {
 
+  /*** Variable declaration ***/
+  @Input('designation') designation: string;
+
+  /*** constructor ***/
   constructor() { }
 
+  /*** OnInit ***/
   ngOnInit() {
   }
 

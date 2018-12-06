@@ -1,2 +1,6 @@
-
-  employee name works!
+<mat-form-field class="name-form-field">
+    <input matInput type="text" placeholder="Clearable input" [(ngModel)]="name">
+    <button mat-button *ngIf="name" matSuffix mat-icon-button aria-label="Clear" (click)="name=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>

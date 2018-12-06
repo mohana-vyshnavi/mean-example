@@ -1,1 +1,6 @@
- employee designation works!
+<mat-form-field class="designation-form-field">
+    <input matInput  type="text" placeholder="Clearable input" [(ngModel)]="designation">
+    <button mat-button *ngIf="designation" matSuffix mat-icon-button aria-label="Clear" (click)="designation=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
