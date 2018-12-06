@@ -1,3 +1,6 @@
-
-  employee id works!
-
+<mat-form-field class="id-form-field">
+  <input matInput type="text" placeholder="Clearable input" [(ngModel)]="id">
+  <button mat-button *ngIf="id" matSuffix mat-icon-button aria-label="Clear" (click)="id=0">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>

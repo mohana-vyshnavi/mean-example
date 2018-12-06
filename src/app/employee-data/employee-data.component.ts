@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import {MatPaginator, MatTableDataSource} from '@angular/material';
+import { Component, OnInit, ViewChild, ElementRef, Output } from '@angular/core';
+import { MatPaginator, MatTableDataSource } from '@angular/material';
 
 export interface PeriodicElement {
   name: string;

@@ -5,7 +5,12 @@ import { CommonModule } from '@angular/common';
 /*** Material Imports ***/
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material';
+import {
+  MatSortModule,
+  MatIconModule,
+  MatButtonModule
+} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 
 /*** Custom Imports ***/
 import { EmployeeDataRoutingModule } from './employee-data-routing.module';
@@ -15,14 +20,24 @@ import { EmployeeDesignationComponent } from './employee-designation/employee-de
 import { EmployeeIdComponent } from './employee-id/employee-id.component';
 import { EmployeeSalaryComponent } from './employee-salary/employee-salary.component';
 import { EmployeePersonalDetailsComponent } from './employee-personal-details/employee-personal-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
+    // Angular provided modules
     CommonModule,
-    EmployeeDataRoutingModule,
+    FormsModule,
+
+    // Matrial provided modules
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule, 
+    MatSortModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+
+    // User created modules
+    EmployeeDataRoutingModule,
   ],
   declarations: [
     EmployeeDataComponent,

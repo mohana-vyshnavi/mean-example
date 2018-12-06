@@ -2,7 +2,7 @@
   employee-data works!
 </p>
 <div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource" matSort >
+  <table mat-table [dataSource]="dataSource" matSort>
 
     <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
@@ -11,7 +11,7 @@
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
       <td mat-cell *matCellDef="let element;let i=index">
-          {{element.id}} <app-employee-id></app-employee-id> 
+        <app-employee-id [(id)]="element.id"></app-employee-id>
       </td>
     </ng-container>
 
@@ -19,7 +19,7 @@
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
       <td mat-cell *matCellDef="let element">
-        <app-employee-name></app-employee-name>
+        <app-employee-name [(name)]="element.name"></app-employee-name>
       </td>
     </ng-container>
 
@@ -27,7 +27,7 @@
     <ng-container matColumnDef="designation">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Designation </th>
       <td mat-cell *matCellDef="let element">
-        <app-employee-designation></app-employee-designation>
+        <app-employee-designation [(designation)]="element.designation"></app-employee-designation>
       </td>
     </ng-container>
 
