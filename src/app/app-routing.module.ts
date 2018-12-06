@@ -8,6 +8,11 @@ import { EmployeeDataModule } from './employee-data';
             {
                 path: 'EmployeeData',
                 loadChildren: () => EmployeeDataModule
+            },
+            {
+                path: '',
+                redirectTo: 'EmployeeData',
+                pathMatch: 'full'
             }
         ])
     ]

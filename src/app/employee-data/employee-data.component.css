@@ -1,0 +1,9 @@
+table{
+    width: 100%;
+}
+td{
+    margin:0px 5px;
+}
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type{
+    padding: 0px 20px !important;
+}

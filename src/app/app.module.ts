@@ -8,10 +8,10 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent, AppRoutingModule
+    AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule
   ],
